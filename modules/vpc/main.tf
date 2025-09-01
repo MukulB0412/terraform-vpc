@@ -44,7 +44,10 @@ resource "aws_nat_gateway" "this" {
 # Public RT
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.this.id
-  route { cidr_block = "0.0.0.0/0" gateway_id = aws_internet_gateway.this.id }
+  route {
+  cidr_block = "0.0.0.0/0"
+  gateway_id = aws_internet_gateway.this.id
+}
   tags = { Name = "Public-RT" }
 }
 
@@ -57,7 +60,10 @@ resource "aws_route_table_association" "public" {
 # Private RT
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.this.id
-  route { cidr_block = "0.0.0.0/0" nat_gateway_id = aws_nat_gateway.this.id }
+  route { 
+  cidr_block = "0.0.0.0/0"
+  nat_gateway_id = aws_nat_gateway.this.id 
+}
   tags = { Name = "Private-RT" }
 }
 
@@ -98,4 +104,3 @@ resource "aws_instance" "bastion" {
   associate_public_ip_address = true
   tags = { Name = "Bastion-Host" }
 }
-

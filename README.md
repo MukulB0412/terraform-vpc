@@ -15,9 +15,9 @@ This project provisions a **production-grade VPC** in AWS using Terraform.
 
 ```bash
 terraform-vpc/
-│── main.tf               # Root module calling VPC module
-│── variables.tf          # Input variable definitions
-│── terraform.tfvars      # Actual values for variables
+│── main.tf               
+│── variables.tf          
+│── terraform.tfvars     
 │── outputs.tf            # Outputs (VPC ID, Subnets, etc.)
 │── provider.tf           # AWS provider configuration
 │

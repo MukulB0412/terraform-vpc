@@ -24,8 +24,8 @@ terraform-vpc/
 └── modules/
     └── vpc/
         ├── main.tf       
-        ├── variables.tf  # Variables for module
-        └── outputs.tf    # Outputs from VPC module
+        ├── variables.tf  
+        └── outputs.tf    
 ```
 
 ## 🚀 Usage

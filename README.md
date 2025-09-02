@@ -18,7 +18,7 @@ terraform-vpc/
 │── main.tf               
 │── variables.tf          
 │── terraform.tfvars     
-│── outputs.tf            # Outputs (VPC ID, Subnets, etc.)
+│── outputs.tf            
 │── provider.tf           # AWS provider configuration
 │
 └── modules/

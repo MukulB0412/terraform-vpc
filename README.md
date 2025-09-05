@@ -76,4 +76,8 @@ instance_type       = "t2.micro"
 
 ---
 
+## 🐵 All In One VPC
+- Direct usage of Modules from Terraform Registry make the code shorted and more readable. 
+
+
 ✅ This project is modular and reusable for any AWS environment.
